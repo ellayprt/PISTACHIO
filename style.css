@@ -224,6 +224,61 @@ body {
 }
 
 /* ============================================
+   CONTACT INFO (NEW)
+   ============================================ */
+.contact-info {
+    margin-top: 1.2rem;
+    padding-top: 1.2rem;
+    border-top: 2px dashed #c4a882;
+}
+
+.contact-info h4 {
+    font-size: 1.1rem;
+    color: #4c7a3b;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-info p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #3d3329;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-info p i {
+    color: #4c7a3b;
+    width: 20px;
+    text-align: center;
+}
+
+.contact-info .visit-us {
+    margin-top: 0.6rem;
+    background: #4c7a3b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 40px;
+    display: inline-flex;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+    border: none;
+}
+
+.contact-info .visit-us:hover {
+    background: #2d5a2a;
+    cursor: pointer;
+}
+
+.contact-info .visit-us i {
+    color: white;
+}
+
+/* ============================================
    FOOTER
    ============================================ */
 .footer-note {
@@ -310,7 +365,6 @@ body {
         min-width: 120px;
     }
 
-    /* Product cards become vertical */
     .product-card {
         flex-direction: column;
         align-items: stretch;
@@ -363,6 +417,20 @@ body {
     .about-icon {
         font-size: 3rem;
         flex: 0 0 60px;
+    }
+
+    /* Contact info responsive - tablet */
+    .contact-info h4 {
+        font-size: 1rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+
+    .contact-info .visit-us {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
     }
 }
 
@@ -498,6 +566,30 @@ body {
         padding-top: 1rem;
         margin-top: 1rem;
     }
+
+    /* Contact info responsive - mobile */
+    .contact-info {
+        margin-top: 0.8rem;
+        padding-top: 0.8rem;
+        text-align: center;
+    }
+
+    .contact-info h4 {
+        font-size: 0.9rem;
+        justify-content: center;
+    }
+
+    .contact-info p {
+        font-size: 0.8rem;
+        justify-content: center;
+    }
+
+    .contact-info .visit-us {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.7rem;
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 /* ===== EXTRA SMALL PHONES (360px and below) ===== */
@@ -561,5 +653,19 @@ body {
 
     .footer-note {
         font-size: 0.75rem;
+    }
+
+    /* Contact info responsive - extra small */
+    .contact-info h4 {
+        font-size: 0.8rem;
+    }
+
+    .contact-info p {
+        font-size: 0.7rem;
+    }
+
+    .contact-info .visit-us {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
     }
 }
