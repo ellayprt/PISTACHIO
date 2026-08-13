@@ -1,0 +1,252 @@
+/* ============================================
+   RESET & BASE
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: url('https://t3.ftcdn.net/jpg/10/98/78/26/360_F_1098782685_PhqykdEFWRQQOl0peMFfF11Fu9Zft60I.jpg') center center / cover no-repeat fixed;
+    color: #1e1e1e;
+    padding: 1.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   HERO
+   ============================================ */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    background: #e7f3df; /* lighter pistachio */
+    padding: 2rem 2.5rem;
+    border-radius: 40px;
+    margin-bottom: 2.5rem;
+}
+
+.hero-text {
+    flex: 1 1 240px;
+}
+.hero-text h2 {
+    font-size: 2.2rem;
+    color: #4c7a3b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.hero-text p {
+    font-size: 1rem;
+    margin: 0.8rem 0 1.2rem;
+    color: #3d3329;
+    line-height: 1.5;
+}
+.hero-badge {
+    background: #4c7a3b;
+    color: white;
+    padding: 0.4rem 1.2rem;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+.hero-image {
+    flex: 1 1 200px;
+    text-align: center;
+}
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+    max-height: 220px;
+    object-fit: cover;
+    background: #e8e0d8;
+    min-height: 150px;
+    min-width: 150px;
+}
+
+/* ============================================
+   SECTION TITLE
+   ============================================ */
+.section-title {
+    margin: 2.5rem 0 1.5rem;
+    text-align: center;
+}
+.section-title h3 {
+    font-size: 1.8rem;
+    color: #2f5d2d;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(76, 122, 59, 0.18);
+    border-radius: 999px;
+    padding: 0.7rem 1.4rem;
+    box-shadow: 0 8px 20px rgba(76, 122, 59, 0.08);
+    font-weight: 800;
+    letter-spacing: 0.02em;
+}
+
+/* ============================================
+   PRODUCT GRID
+   ============================================ */
+.product-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.product-card {
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(126, 166, 107, 0.25);
+    border-radius: 28px;
+    padding: 1.3rem;
+    box-shadow: 0 10px 30px rgba(76, 122, 59, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 100%;
+}
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 32px rgba(76, 122, 59, 0.12);
+}
+
+.product-img {
+    background: linear-gradient(135deg, #f6fbe9, #edf6e5);
+    border-radius: 22px;
+    padding: 0.7rem;
+    min-height: 0;
+    width: 270px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    border: 1px solid rgba(126, 166, 107, 0.18);
+}
+.product-img img {
+    max-width: 100%;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    border-radius: 18px;
+}
+.product-img .placeholder-text {
+    color: #aaa;
+    font-size: 0.85rem;
+    font-style: italic;
+    padding: 1rem;
+}
+
+.product-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0 0 0.55rem;
+    color: #2d4a2a;
+    letter-spacing: -0.02em;
+}
+.product-desc {
+    font-size: 0.96rem;
+    color: #5c5a56;
+    margin: 0 0 0.9rem;
+    line-height: 1.6;
+    min-height: 0;
+}
+
+.product-price {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #2d4a2a;
+    margin: 0;
+    background: linear-gradient(135deg, #edf8e6, #dfeecb);
+    padding: 0.55rem 1.05rem;
+    border-radius: 999px;
+    border: 1px solid #cfe7bf;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
+}
+
+/* ============================================
+   ABOUT
+   ============================================ */
+.about-pistachio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    background: #f1ebe3;
+    padding: 2rem 2.5rem;
+    border-radius: 40px;
+    margin: 2.8rem 0 1.5rem;
+}
+.about-text {
+    flex: 2 1 260px;
+}
+.about-text h3 {
+    font-size: 1.6rem;
+    color: #4c7a3b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.6rem;
+}
+.about-text p {
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+}
+.highlight {
+    background: #d4b895;
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+    display: inline-block;
+    font-weight: 500;
+}
+.about-icon {
+    flex: 0 0 80px;
+    font-size: 4rem;
+    color: #4c7a3b;
+    text-align: center;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer-note {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-top: 2px solid #d4b895;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    color: #4d3e33;
+}
+.footer-note span i {
+    margin-right: 6px;
+}
+
+/* Cart styles removed */
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 600px) {
+    .hero {
+        padding: 1.5rem;
+    }
+}
