@@ -46,6 +46,10 @@
         const card = document.createElement('div');
         card.className = 'product-card';
 
+        const imgHtml = p.image
+            ? `<img src="${p.image}" alt="${p.name}" />`
+            : '';
+
         card.innerHTML = `
             <div class="product-img">${imgHtml}</div>
             <div class="product-name">${p.name}</div>
