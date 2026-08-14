@@ -46,10 +46,10 @@
         const card = document.createElement('div');
         card.className = 'product-card';
 
-        const imgHtml = p.image
-            ? `<img src="${p.image}" alt="${p.name}" />`
-            : `<div class="placeholder-text"><i class="fas fa-image" style="font-size:2rem; display:block; margin-bottom:6px;"></i> i-paste ang image URL dito</div>`;
-
+const imgHtml = p.image
+    ? `<img src="${p.image}" alt="${p.name}" />`
+    : '';  // Wala nay placeholder box
+        
         card.innerHTML = `
             <div class="product-img">${imgHtml}</div>
             <div class="product-name">${p.name}</div>
