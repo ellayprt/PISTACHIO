@@ -669,3 +669,15 @@ body {
         padding: 0.2rem 0.5rem;
     }
 }
+
+/* ============================================
+   HIDE EMPTY PRODUCT IMAGES (Remove X box)
+   ============================================ */
+.product-img:empty {
+    display: none !important;
+}
+
+/* Hide placeholder text if it still appears */
+.placeholder-text {
+    display: none !important;
+}
