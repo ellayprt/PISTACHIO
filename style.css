@@ -185,10 +185,6 @@ body {
    ABOUT
    ============================================ */
 .about-pistachio {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 2rem;
     background: #f1ebe3;
     padding: 2rem 2.5rem;
     border-radius: 40px;
@@ -216,20 +212,19 @@ body {
     display: inline-block;
     font-weight: 500;
 }
-.about-icon {
-    flex: 0 0 80px;
-    font-size: 4rem;
-    color: #4c7a3b;
-    text-align: center;
-}
 
 /* ============================================
-   CONTACT INFO (NEW)
+   CONTACT INFO (NEW - SEPARATE SECTION)
    ============================================ */
+.contact-section {
+    background: #f1ebe3;
+    padding: 2rem 2.5rem;
+    border-radius: 40px;
+    margin: 1.5rem 0 1.5rem;
+}
+
 .contact-info {
-    margin-top: 1.2rem;
-    padding-top: 1.2rem;
-    border-top: 2px dashed #c4a882;
+    width: 100%;
 }
 
 .contact-info h4 {
@@ -407,19 +402,20 @@ body {
     .about-pistachio {
         padding: 1.5rem;
         border-radius: 30px;
-        gap: 1.2rem;
+        margin: 2rem 0 1rem;
     }
 
     .about-text h3 {
         font-size: 1.3rem;
     }
 
-    .about-icon {
-        font-size: 3rem;
-        flex: 0 0 60px;
+    /* Contact section responsive - tablet */
+    .contact-section {
+        padding: 1.5rem;
+        border-radius: 30px;
+        margin: 1rem 0 1.5rem;
     }
 
-    /* Contact info responsive - tablet */
     .contact-info h4 {
         font-size: 1rem;
     }
@@ -530,8 +526,6 @@ body {
         padding: 1.2rem;
         border-radius: 24px;
         gap: 0.8rem;
-        flex-direction: column;
-        text-align: center;
         margin: 2rem 0 1rem;
     }
 
@@ -553,9 +547,25 @@ body {
         padding: 0.2rem 0.8rem;
     }
 
-    .about-icon {
-        font-size: 2.5rem;
-        flex: 0 0 40px;
+    .contact-section {
+        padding: 1.2rem;
+        border-radius: 24px;
+        margin: 1rem 0 1.5rem;
+    }
+
+    .contact-info h4 {
+        font-size: 0.9rem;
+    }
+
+    .contact-info p {
+        font-size: 0.8rem;
+    }
+
+    .contact-info .visit-us {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.7rem;
+        width: 100%;
+        justify-content: center;
     }
 
     .footer-note {
@@ -565,30 +575,6 @@ body {
         font-size: 0.85rem;
         padding-top: 1rem;
         margin-top: 1rem;
-    }
-
-    /* Contact info responsive - mobile */
-    .contact-info {
-        margin-top: 0.8rem;
-        padding-top: 0.8rem;
-        text-align: center;
-    }
-
-    .contact-info h4 {
-        font-size: 0.9rem;
-        justify-content: center;
-    }
-
-    .contact-info p {
-        font-size: 0.8rem;
-        justify-content: center;
-    }
-
-    .contact-info .visit-us {
-        font-size: 0.8rem;
-        padding: 0.3rem 0.7rem;
-        width: 100%;
-        justify-content: center;
     }
 }
 
@@ -651,11 +637,12 @@ body {
         font-size: 0.75rem;
     }
 
-    .footer-note {
-        font-size: 0.75rem;
+    .contact-section {
+        padding: 0.9rem;
+        border-radius: 18px;
+        margin: 0.8rem 0 1.5rem;
     }
 
-    /* Contact info responsive - extra small */
     .contact-info h4 {
         font-size: 0.8rem;
     }
@@ -667,6 +654,10 @@ body {
     .contact-info .visit-us {
         font-size: 0.7rem;
         padding: 0.2rem 0.5rem;
+    }
+
+    .footer-note {
+        font-size: 0.75rem;
     }
 }
 
