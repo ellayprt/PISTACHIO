@@ -59,3 +59,7 @@
         grid.appendChild(card);
     });
 })();
+
+.placeholder-text {
+    display: none !important;
+}
